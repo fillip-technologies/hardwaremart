@@ -1,13 +1,13 @@
  <div class="relative w-full">
-     <div class="flex items-center w-full rounded-full bg-white shadow-sm overflow-hidden">
+     <div class="flex items-center w-full rounded-full border-2 border-secondary  shadow-sm overflow-hidden">
 
          <input id="searchInput" type="text" placeholder='Search "Camera"'
-             class="flex-1 px-4 py-2.5 text-sm text-black bg-transparent
+             class="flex-1 px-4 py-2.5 text-sm text-black bg-white
           border-r-0 rounded-l-full focus:outline-none" />
 
 
          <button
-             class="px-5 py-2.5 bg-primary text-white flex items-center justify-center
+             class="px-5 py-2.5 bg-primary text-primary sm:text-white flex items-center justify-center sm:bg-primary bg-white 
             border-l-0 rounded-r-full hover:bg-red-700 transition">
              <i class="fas fa-search text-sm"></i>
          </button>

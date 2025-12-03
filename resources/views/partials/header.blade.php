@@ -8,7 +8,7 @@
 
     <!-- Mobile Menu Button -->
     <div class="md:hidden">
-        <button @click="mobileMenu = !mobileMenu" class="text-gray-700 focus:outline-none">
+        <button @click="mobileMenu = !mobileMenu" class="text-white focus:outline-none">
             <i class="fas fa-bars text-2xl"></i>
         </button>
     </div>
