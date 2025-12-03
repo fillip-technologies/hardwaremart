@@ -3,7 +3,7 @@
         /* 1. Electrical & Appliances */
         [
             'title' => 'Electrical & Appliances',
-            'viewAll' => '/category/electrical-appliances',
+            'viewAll' => '/view-product',
             'brands' => [
                 '/images/brand/br1.webp',
                 '/images/brand/br2.webp',
@@ -63,7 +63,7 @@
         /* 2. Industrial Tools */
         [
             'title' => 'Industrial Tools',
-            'viewAll' => '/category/industrial-tools',
+            'viewAll' => '/view-product',
             'brands' => ['/images/brand/br1.webp', '/images/brand/br4.webp'],
             'products' => [
                 [
@@ -90,7 +90,7 @@
         /* 3. Office Supplies */
         [
             'title' => 'Office Supplies',
-            'viewAll' => '/category/office-supplies',
+            'viewAll' => '/view-product',
             'brands' => ['/images/brand/br3.webp', '/images/brand/br4.webp'],
             'products' => [
                 [
@@ -116,7 +116,7 @@
         /* 4. Medical & Lab Supplies */
         [
             'title' => 'Medical & Lab Supplies',
-            'viewAll' => '/category/medical-lab',
+            'viewAll' => '/view-product',
             'brands' => ['/images/brand/br1.webp', '/images/brand/br4.webp'],
             'products' => [
                 [
@@ -143,7 +143,7 @@
         /* 5. Agri & Gardening */
         [
             'title' => 'Agri & Gardening',
-            'viewAll' => '/category/agri-gardening',
+            'viewAll' => '/view-product',
             'brands' => ['/images/brand/br1.webp', '/images/brand/br2.webp', '/images/brand/br3.webp'],
             'products' => [
                 [
@@ -170,7 +170,7 @@
         /* 6. Safety & Supplies */
         [
             'title' => 'Safety & Supplies',
-            'viewAll' => '/category/safety-supplies',
+            'viewAll' => '/view-product',
             'brands' => [
                 '/images/brand/br1.webp',
                 '/images/brand/br2.webp',
@@ -203,7 +203,7 @@
         /* 7. Construction Materials */
         [
             'title' => 'Construction Materials',
-            'viewAll' => '/category/construction-materials',
+            'viewAll' => '/view-product',
             'brands' => [
                 '/images/brand/br1.webp',
                 '/images/brand/br2.webp',
@@ -235,7 +235,7 @@
         /* 8. Automotive */
         [
             'title' => 'Automotive',
-            'viewAll' => '/category/automotive',
+            'viewAll' => '/view-product',
             'brands' => [
                 '/images/brand/br1.webp',
                 '/images/brand/br2.webp',

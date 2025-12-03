@@ -41,8 +41,10 @@
         @endif
 
 
-        <img src="{{ $image }}"
-            class="w-full h-full object-cover group-hover:scale-110 transition-all duration-500" />
+        <a href={{ route('product-details') }}>
+            <img src="{{ $image }}"
+                class="w-full h-full object-cover group-hover:scale-110 transition-all duration-500 hover:cursor-pointer" />
+        </a>
 
         @if ($discount)
             <span class="absolute top-3 left-3 bg-primary text-white px-3 py-1 text-xs rounded-full font-semibold">
