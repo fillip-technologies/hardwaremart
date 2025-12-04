@@ -1,15 +1,22 @@
  <div class="relative w-full">
-     <div class="flex items-center w-full rounded-full border-2 border-secondary  shadow-sm overflow-hidden">
-
+     <div class="hidden sm:flex items-center w-full rounded-full border-2 border-secondary  shadow-sm overflow-hidden">
          <input id="searchInput" type="text" placeholder='Search "Camera"'
              class="flex-1 px-4 py-2.5 text-sm text-black bg-white
           border-r-0 rounded-l-full focus:outline-none" />
 
-
          <button
-             class="px-5 py-2.5 bg-primary text-primary sm:text-white flex items-center justify-center sm:bg-primary bg-white 
+             class="px-5 pl-5 py-2.5 bg-primary text-primary sm:text-white flex items-center justify-center sm:bg-primary bg-white 
             border-l-0 rounded-r-full hover:bg-red-700 transition">
              <i class="fas fa-search text-sm"></i>
+         </button>
+     </div>
+
+     <div
+         class="sm:hidden flex border border-secondary/90 rounded-full px-3 py-2 items-center shadow-sm hover:shadow-md transition">
+         <input id="searchInput" type="text" placeholder='Search "Camera"'
+             class="flex-1 text-sm focus:outline-none bg-transparent" />
+         <button class="text-primary hover:text-primary/90 transition">
+             <i class="fas fa-search"></i>
          </button>
      </div>
 

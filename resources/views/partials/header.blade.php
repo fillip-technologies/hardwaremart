@@ -69,7 +69,7 @@
                     class="absolute -top-2 -right-2 bg-primary text-white text-xs font-bold rounded-full h-4 w-4 flex items-center justify-center">
                     5</div>
             </a>
-            <a href="/cart0" class="flex flex-col items-center hover:text-primary relative">
+            <a href="/cart" class="flex flex-col items-center hover:text-primary relative">
                 <i class="fas fa-shopping-cart text-lg"></i>
                 <span class="text-xs">Cart</span>
                 <div
