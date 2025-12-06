@@ -119,7 +119,7 @@
                         <label
                             class="flex items-center p-4 border border-gray-200 rounded-lg cursor-pointer hover:bg-gray-50 transition-colors">
                             <input type="radio" name="payment" value="razorpay" checked
-                                class="h-4 w-4 text-pink-600 focus:ring-pink-600 border-gray-300" />
+                                class="h-4 w-4 text-primary focus:ring-primary border-gray-300" />
                             <div class="ml-4 flex items-center">
                                 <img src="https://razorpay.com/assets/razorpay-logo.svg" alt="Razorpay"
                                     class="h-8 w-auto" />
@@ -130,7 +130,7 @@
                         <label
                             class="flex items-center p-4 border border-gray-200 rounded-lg cursor-pointer hover:bg-gray-50 transition-colors">
                             <input type="radio" name="payment" value="cod"
-                                class="h-4 w-4 text-pink-600 focus:ring-pink-600 border-gray-300" />
+                                class="h-4 w-4 text-primary focus:ring-primary border-gray-300" />
                             <div class="ml-4 flex items-center gap-2">
                                 <i class="fa-solid fa-wallet text-2xl text-green-500"></i>
                                 <span class="text-gray-800 font-medium">Cash on Delivery</span>
@@ -141,7 +141,7 @@
                 </div>
             </div>
 
-           
+
             <!-- Order Summary -->
             <div
                 class="bg-gray-50 border border-primary rounded p-6 shadow-sm 
@@ -153,8 +153,8 @@
 
                     <div class="flex items-center space-x-4">
                         <div class="w-16 h-16 bg-white rounded-lg flex items-center justify-center">
-                            <img src="https://www.bosch-pt.co.in/in/en/ocsmedia/260214-54/application-image/full/drill-gbm-13-re-06014775f0.png" alt="Product"
-                                class="w-full h-full object-contain rounded" />
+                            <img src="https://www.bosch-pt.co.in/in/en/ocsmedia/260214-54/application-image/full/drill-gbm-13-re-06014775f0.png"
+                                alt="Product" class="w-full h-full object-contain rounded" />
                         </div>
                         <div class="flex-1">
                             <h3 class="font-medium text-gray-900">Bosch Heavy Duty Drill Machine</h3>
@@ -168,8 +168,8 @@
 
                     <div class="flex items-center space-x-4">
                         <div class="w-16 h-16 bg-white rounded-lg flex items-center justify-center">
-                            <img src="https://content.misumi-ec.com/image/upload/t_product_main/v1/p/jp/product/series/223005121927/223005121927_001.jpg" alt="Product"
-                                class="w-full h-full object-contain rounded" />
+                            <img src="https://content.misumi-ec.com/image/upload/t_product_main/v1/p/jp/product/series/223005121927/223005121927_001.jpg"
+                                alt="Product" class="w-full h-full object-contain rounded" />
                         </div>
                         <div class="flex-1">
                             <h3 class="font-medium text-gray-900">Industrial Impact Wrench</h3>
@@ -183,12 +183,13 @@
 
                 </div>
 
+                {{-- For desktop --}}
 
-                <div class="mb-6 border-t pt-3">
+                <div class="mb-6 border-t pt-3 hidden md:block">
                     <label for="promo" class="block text-sm font-medium text-gray-700 mb-2">
                         Have a Promo Code?
                     </label>
-                    <div class="flex">
+                    <div class="flex flex-col md:flex-row">
                         <input type="text" id="promo" placeholder="Enter code"
                             class="flex-1 px-4 py-2 border border-gray-300 rounded-l-md focus:ring-2 focus:ring-primary focus:border-primary outline-none" />
                         <button class="px-4 bg-primary text-white rounded-r-md hover:bg-primary/90 transition">
@@ -196,6 +197,28 @@
                         </button>
                     </div>
                 </div>
+
+
+                {{-- For mobile --}}
+
+                <div class="mb-6 border-t pt-3 md:hidden">
+                    <label for="promo" class="block text-sm font-medium text-gray-700 mb-2">
+                        Have a Promo Code?
+                    </label>
+
+                    <div class="relative w-full">
+                        <input type="text" id="promo" placeholder="Enter code"
+                            class="w-full pr-20 px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:border-primary outline-none" />
+
+                        <button
+                            class="absolute right-2 top-1/2 -translate-y-1/2 text-primary text-xs uppercase font-semibold hover:text-primary/90 transition">
+                            Apply
+                        </button>
+
+                    </div>
+                </div>
+
+
 
 
                 <dl class="space-y-3 text-gray-700">
@@ -221,7 +244,7 @@
                     </div>
                 </dl>
 
-                <a href="{{route('complete-order')}}"
+                <a href="{{ route('complete-order') }}"
                     class="block w-full mt-6 bg-primary text-white py-3 rounded shadow-md hover:bg-primary/90 transition font-medium text-center">
                     Complete Order <i class="fa-solid fa-lock ml-2"></i>
 
