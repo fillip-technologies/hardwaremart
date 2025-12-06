@@ -132,7 +132,7 @@
                 class="flex space-x-4 overflow-x-auto snap-x snap-mandatory hide-scrollbar scroll-smooth py-4">
 
                 @foreach ($topProducts as $product)
-                    <div class="min-w-[60%] sm:min-w-[17%] snap-start">
+                    <div class="min-w-[80%] sm:min-w-[17%] snap-start">
                         <x-products.product-card :isWishlisted="$product['isWishlisted'] ?? false" :title="$product['title']" :image="$product['image']" :price="$product['price']"
                             :oldPrice="isset($product['oldPrice']) ? $product['oldPrice'] : null" :discount="isset($product['discount']) ? $product['discount'] : null" :description="isset($product['description']) ? $product['description'] : null" />
                     </div>

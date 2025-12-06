@@ -9,6 +9,9 @@
                 '/images/brand/br2.webp',
                 '/images/brand/br3.webp',
                 '/images/brand/br4.webp',
+                '/images/brand/br1.webp',
+                '/images/brand/br2.webp',
+                '/images/brand/br3.webp',
             ],
             'products' => [
                 [

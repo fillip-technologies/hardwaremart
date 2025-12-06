@@ -10,7 +10,7 @@
     <h1 class="text-2xl text-secondary/80 border-b-2 border-primary pb-2">
         {{ $title }}
     </h1>
-    <a href="{{ $viewAll }}" class="bg-primary flex items-center justify-center px-3 py-2 rounded">
+    <a href="{{ $viewAll }}" class="hidden bg-primary md:flex items-center justify-center px-3 py-2 rounded">
         <p class="text-white">View All</p>
     </a>
 </div>
@@ -19,7 +19,7 @@
 <div class="flex flex-col md:flex-row px-6 mx-auto gap-6 pb-5">
 
     <!-- LEFT: BRANDS -->
-    <div class="w-full md:w-[30%] p-6">
+    {{-- <div class="w-full md:w-[30%] p-6">
 
         <h3 class="text-lg font-semibold text-secondary mb-5">
             Top Brands
@@ -31,7 +31,22 @@
             @endforeach
         </div>
 
+    </div> --}}
+
+    <div class="w-full md:w-[30%] md:p-6 p-3">
+
+        <h3 class="text-lg font-semibold text-secondary/90 mb-5">
+            Top Brands
+        </h3>
+        <div class="flex md:grid md:grid-cols-4 md:gap-4 gap-2 overflow-x-auto hide-scrollbar md:overflow-visible">
+
+            @foreach ($brands as $brand)
+                <img src="{{ $brand }}" class="w-20 h-auto object-contain rounded-full shrink-0" />
+            @endforeach
+
+        </div>
     </div>
+
 
     <!-- RIGHT: PRODUCTS -->
     <div class="w-full md:w-[70%]">
@@ -55,7 +70,7 @@
                 class="flex space-x-4 overflow-x-auto snap-x snap-mandatory hide-scrollbar scroll-smooth py-2">
 
                 @foreach ($products as $product)
-                    <div class="min-w-[50%] md:min-w-[25%] snap-start">
+                    <div class="min-w-[80%] sm:min-w-[25%] snap-start">
                         {{-- Product Card Component --}}
                         <x-products.product-card :isWishlisted="$product['isWishlisted'] ?? false" :title="$product['title']" :image="$product['image']" :price="$product['price']"
                             :oldPrice="$product['oldPrice']" :discount="$product['discount']" :description="$product['description']" />
@@ -68,6 +83,12 @@
 
     </div>
 
+</div>
+
+<div class="md:hidden px-6 mx-auto mb-4 flex justify-end ">
+    <a href="{{ $viewAll }}" class="bg-primary flex items-center justify-center px-3 py-2 rounded">
+        <p class="text-white">View All</p>
+    </a>
 </div>
 
 {{-- <style>
