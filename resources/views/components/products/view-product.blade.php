@@ -1,5 +1,5 @@
 <section class="bg-gray-50 py-12" id="shop">
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="w-full mx-auto px-6">
         <div class="flex items-center justify-between mb-6 lg:hidden">
             <p class="text-sm text-gray-600">Showing 1–12 of 128 products</p>
             <button id="openFilters" class="px-4 py-2 border rounded text-sm text-primary">
@@ -7,9 +7,9 @@
             </button>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
             <aside id="sidebarFilters"
-                class="hidden lg:block lg:col-span-1 bg-white rounded shadow p-6 space-y-6 border border-rose-100 self-start fixed lg:static top-0 left-0 h-full w-80 overflow-y-auto lg:w-auto lg:h-auto">
+                class="z-50 md:z-0 hidden lg:block lg:col-span-1 bg-white md:rounded shadow p-6 space-y-6 border border-rose-100 self-start fixed lg:static top-0 left-0 h-full w-80 overflow-y-auto lg:w-auto lg:h-auto">
                 <div class="flex items-center justify-end lg:hidden mb-4">
                     <button id="closeFilters" class="text-gray-500 hover:text-gray-800">
                         <i class="fa-solid fa-xmark text-xl"></i>
@@ -115,7 +115,7 @@
             </aside>
 
             <!-- Products Grid -->
-            <div class="lg:col-span-3">
+            <div class="lg:col-span-4">
                 <div class="hidden lg:flex items-center justify-between mb-8">
                     <p class="text-sm text-gray-600">Showing 1–12 of 128 products</p>
                     <select
@@ -128,7 +128,7 @@
 
                 <!-- Product Cards -->
                 <!-- Product Cards -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
                     @php
                         // remove when passing from controller
@@ -186,16 +186,16 @@
                 </div>
 
                 <div class="flex justify-center mt-12 gap-2">
-                    <button class="px-4 py-2 border rounded hover:bg-primary/10 text-primary">
+                    <button class="px-4 py-2 border rounded hover:bg-secondary text-primary">
                         1
                     </button>
                     <button class="px-4 py-2 border rounded hover:bg-primary/90 bg-primary text-white">
                         2
                     </button>
-                    <button class="px-4 py-2 border rounded hover:bg-primary/10 text-primary">
+                    <button class="px-4 py-2 border rounded hover:bg-secondary text-primary">
                         3
                     </button>
-                    <button class="px-4 py-2 border rounded hover:bg-primary/10 text-primary">
+                    <button class="px-4 py-2 border rounded hover:bg-secondary text-primary">
                         Next
                     </button>
                 </div>
