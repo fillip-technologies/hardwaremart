@@ -2,7 +2,7 @@
     <div class="max-w-full mx-auto px-4">
 
         <!-- MOBILE: Horizontal Scroll Layout -->
-        <div class="md:hidden flex gap-4 overflow-x-auto no-scrollbar scrollbar-hide py-2">
+        {{-- <div class="md:hidden flex gap-4 overflow-x-auto no-scrollbar scrollbar-hide py-2">
 
             <!-- Card -->
             <div class="min-w-32 p-4 bg-gray-50 rounded-lg shadow-sm shrink-0 text-center cursor-pointer">
@@ -30,9 +30,9 @@
                 <p class="text-gray-500 text-xs mt-1">Upto 60% OFF</p>
             </div>
 
-        </div>
+        </div> --}}
 
-        <!-- DESKTOP: 5 Column Grid (Your original look) -->
+        <!-- DESKTOP: 5 Column Grid -->
         <div class="hidden md:grid grid-cols-5 border rounded overflow-hidden">
 
             <div class="group p-5 flex flex-col items-center justify-center border-r cursor-pointer">
