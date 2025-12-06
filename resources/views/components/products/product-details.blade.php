@@ -31,7 +31,7 @@
             <div class="space-y-6">
 
                 <!-- TITLE -->
-                <h1 class="text-2xl font-semibold text-slate-900 leading-tight">
+                <h1 class="md:text-2xl text-xl font-semibold text-slate-900 leading-tight">
                     ProTorque 10L 2000W 5-Star Instant Water Heater – Heavy Duty,
                     Fast Heating, Anti-Rust Coating (Grey, 10 L)
                 </h1>

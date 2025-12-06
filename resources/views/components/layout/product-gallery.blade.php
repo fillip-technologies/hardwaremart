@@ -20,7 +20,7 @@
         </div>
 
         <!-- THUMBNAILS -->
-        <div class="md:flex flex-wrap justify-center gap-4 hidden">
+        <div class="flex flex-wrap justify-center gap-4 ">
             <template x-for="(img, index) in images" :key="index">
                 <div @click="select(index)" class="overflow-hidden rounded cursor-pointer border-2"
                     :class="currentIndex === index ? 'border-blue-600' : 'border-transparent'">
