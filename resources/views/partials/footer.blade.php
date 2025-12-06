@@ -4,7 +4,7 @@
     <div class="w-full mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 pb-10">
 
         <!-- Great Value -->
-        <div class="flex items-start gap-3 px-4">
+      <div class="flex items-start gap-3 border-l-2 px-4 md:border-none">
             <i class="fas fa-wallet text-primary text-3xl"></i>
             <div>
                 <h4 class="font-semibold text-sm">Great Value</h4>
@@ -169,8 +169,7 @@
                     <span>Copyright</span>
                     <span class="mx-2">|</span>
                     <span>Privacy Policy</span>
-                    <span class="mx-2">|</span>
-                    <span>Compliance</span>
+                    
                 </div>
 
                 <!-- Center: copyright -->
