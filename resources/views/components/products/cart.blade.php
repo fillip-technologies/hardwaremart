@@ -116,7 +116,7 @@
                 </a>
 
 
-                <a href="/home" class="block mt-4 text-center text-sm text-primary hover:underline">
+                <a href="/" class="block mt-4 text-center text-sm text-primary hover:underline">
                     <i class="fa-solid fa-arrow-left"></i> Continue Shopping
                 </a>
 
