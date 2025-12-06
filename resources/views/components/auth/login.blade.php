@@ -29,10 +29,10 @@
             <div class="flex items-center justify-between text-sm">
                 <label class="flex items-center space-x-2">
                     <input type="checkbox" required checked
-                        class="rounded bg-transparent border-white/40 text-primary focus:ring-primary" />
-                    <span class="text-gray-200">Remember me</span>
+                        class="rounded bg-transparent border-white/40  text-primary focus:ring-primary" />
+                    <span class="text-gray-200 text-xs md:text-sm">Remember me</span>
                 </label>
-                <button type="button" id="forgotPasswordBtn" class="text-primary hover:underline">
+                <button type="button" id="forgotPasswordBtn" class="text-xs md:text-sm text-primary hover:underline">
                     Forgot Password?
                 </button>
             </div>
