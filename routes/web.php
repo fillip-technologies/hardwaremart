@@ -4,9 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
 
-Route::get('/home', [HomeController::class, 'homePage'])->name('home');
+Route::get('/', [HomeController::class, 'homePage'])->name('home');
 
-Route::get('/', [HomeController::class, 'loginPage'])->name('login');
+Route::get('/login', [HomeController::class, 'loginPage'])->name('login');
 
 Route::get('/register', [HomeController::class, 'registerPage'])->name('register');
 

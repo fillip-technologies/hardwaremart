@@ -38,7 +38,7 @@
             </div>
 
             <!-- Login Button -->
-            <button type="button" onclick="window.location.href='/home'"
+            <button type="button" onclick="window.location.href='/account-overview'"
                 class="block text-center w-full py-2 px-4 bg-primary text-white font-medium rounded-full shadow-lg hover:bg-primary/90 transition duration-300">
                 Login
             </button>

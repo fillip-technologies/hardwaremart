@@ -2,7 +2,7 @@
     class="flex items-center justify-between px-6 md:px-12 py-4 bg-secondary shadow-md sticky top-0 z-50">
 
     <!-- Logo -->
-    <a href="/home" class="text-3xl font-serif font-bold cursor-pointer">
+    <a href="/" class="text-3xl font-serif font-bold cursor-pointer">
         <img src="/images/white-logo-removebg-preview.png" class="h-14" />
     </a>
 
@@ -21,7 +21,7 @@
     <!-- Desktop Icons -->
     <div class="hidden md:flex items-center space-x-6 text-gray-700 pr-6">
         <!-- Account -->
-        <a href="/account-overview" class="relative flex flex-col items-center text-white transition">
+        <a href="/login" class="relative flex flex-col items-center text-white transition">
             <i class="far fa-user text-lg"></i>
             <span class="mt-1 text-xs md:text-sm">Account</span>
         </a>

@@ -35,7 +35,7 @@
 
 
             <!-- Login Button -->
-            <button type="button" onclick="window.location.href='/'"
+            <button type="button" onclick="window.location.href='/login'"
                 class="block text-center w-full py-2 px-4 bg-primary text-white font-medium rounded-full shadow-lg hover:bg-primary/90 transition duration-300">
                 Register
             </button>
@@ -45,7 +45,7 @@
         <!-- Register -->
         <p class="text-center text-sm text-gray-300 mt-6">
             Already have an account?
-            <a href="/" class="text-primary hover:underline">Login</a>
+            <a href="/login" class="text-primary hover:underline">Login</a>
         </p>
 
     </div>
