@@ -33,35 +33,33 @@
         <div x-data class="relative">
 
             <!-- SCROLL AREA -->
-            <div 
-                x-ref="slider"
-                class="flex space-x-0 overflow-x-auto snap-x snap-mandatory hide-scrollbar scroll-smooth py-4">
+            <div x-ref="slider"
+                class="flex md:gap-6 overflow-x-auto snap-x snap-mandatory hide-scrollbar scroll-smooth py-4">
 
                 @foreach ($topProducts as $product)
-                    <div class="min-w-[25%] sm:min-w-[10%] snap-start flex justify-center">
-                        <img 
-                            src="{{ $product['image'] }}"
-                            class="w-24 h-24 object-contain rounded-full border shadow-sm hover:shadow-lg transition"
-                        />
+                    <!-- Brand Item -->
+                    <div class="snap-center shrink-0 w-24 sm:w-28 md:w-32 flex justify-center">
+                        <div
+                            class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full bg-white shadow hover:shadow-lg transition border">
+                            <img src="{{ $product['image'] }}" class="w-full h-full object-contain rounded-full" />
+                        </div>
                     </div>
                 @endforeach
 
             </div>
 
-            <!-- BUTTONS (INSIDE x-data) -->
-            <div class="flex justify-end px-10 space-x-3 mt-5">
+            <!-- BUTTONS (DESKTOP ONLY) -->
+            <div class="hidden sm:flex justify-end px-10 space-x-3 mt-5">
 
                 <!-- Left Arrow -->
-                <button 
-                    @click="$refs.slider.scrollBy({ left: -250, behavior: 'smooth' })"
-                    class="hidden sm:flex bg-primary text-white px-3 py-3 rounded-full shadow z-10">
+                <button @click="$refs.slider.scrollBy({ left: -250, behavior: 'smooth' })"
+                    class="bg-primary text-white px-3 py-3 rounded-full shadow z-10 hover:bg-primary/90 transition">
                     <i class="fas fa-chevron-left"></i>
                 </button>
 
                 <!-- Right Arrow -->
-                <button 
-                    @click="$refs.slider.scrollBy({ left: 250, behavior: 'smooth' })"
-                    class="hidden sm:flex bg-primary text-white px-3 py-3 rounded-full shadow z-10">
+                <button @click="$refs.slider.scrollBy({ left: 250, behavior: 'smooth' })"
+                    class="bg-primary text-white px-3 py-3 rounded-full shadow z-10 hover:bg-primary/90 transition">
                     <i class="fas fa-chevron-right"></i>
                 </button>
 
