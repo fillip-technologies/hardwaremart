@@ -127,7 +127,7 @@
             </div>
 
             <!-- INPUT -->
-            <div class="p-4 bg-white border-t border-midGray/40 shrink-0">
+            {{-- <div class="p-4 bg-white border-t border-midGray/40 shrink-0">
                 <div class="flex items-center gap-2">
                     <input type="text" placeholder="Type a message..."
                         class="flex-1 px-3 py-2 border border-midGray rounded-full 
@@ -137,7 +137,31 @@
                         ➤
                     </button>
                 </div>
+            </div> --}}
+            <div class="p-4 bg-white border-t border-midGray/40 shrink-0">
+
+                <!-- MOBILE STYLE  -->
+                <div class="sm:hidden flex items-center border border-midGray rounded-full px-3 py-2 shadow-sm">
+                    <input type="text" placeholder="Type a message..."
+                        class="flex-1 bg-transparent text-sm focus:outline-none" />
+                    <button class="text-primary text-lg">
+                        ➤
+                    </button>
+                </div>
+
+                <!-- DESKTOP STYLE -->
+                <div class="hidden sm:flex items-center gap-2">
+                    <input type="text" placeholder="Type a message..."
+                        class="flex-1 px-3 py-2 border border-midGray rounded-full 
+                   focus:outline-none focus:ring-2 focus:ring-primary text-sm" />
+                    <button
+                        class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center hover:bg-primary/90 transition">
+                        ➤
+                    </button>
+                </div>
+
             </div>
+
 
         </div>
     </div>
