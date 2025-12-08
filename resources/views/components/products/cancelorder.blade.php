@@ -1,5 +1,5 @@
-<section id="cancelOrderSection" class="bg-gray-50 py-12 px-4 min-h-screen">
-  <div class="max-w-6xl mx-auto">
+<section id="cancelOrderSection" class="bg-gray-50 py-12 px-6 min-h-screen">
+  <div class="w-full mx-auto">
     <div class="flex items-center justify-between mb-8">
       <h2 class="text-3xl text-primary">Cancel Orders</h2>
       {{-- <p class="text-sm text-gray-500">View and manage your recent orders below</p> --}}

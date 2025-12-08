@@ -1,5 +1,5 @@
-<section x-data="{ editField: null }" class="bg-lightGray py-12">
-    <div class="max-w-6xl mx-auto px-6">
+<section x-data="{ editField: null }" class="bg-lightGray">
+    <div class="w-full mx-auto">
 
         <!-- Header -->
         <h2 class="text-2xl font-semibold text-secondary mb-6">Account Settings</h2>
@@ -8,7 +8,7 @@
         <div class="bg-white rounded-xl shadow-lg border border-midGray/40 p-6 space-y-6">
 
             <!-- FULL NAME -->
-            <div class="flex justify-between items-center">
+            <div class="flex flex-col space-y-2 md:flex-row justify-between items-start md:items-center">
                 <div>
                     <p class="text-sm text-gray-500">Full Name</p>
 
@@ -43,7 +43,7 @@
             <hr class="border-midGray/30" />
 
             <!-- EMAIL -->
-            <div class="flex justify-between items-center">
+            <div class="flex flex-col space-y-2 md:flex-row justify-between items-start md:items-center">
                 <div>
                     <p class="text-sm text-gray-500">Email</p>
 
@@ -76,7 +76,8 @@
             <hr class="border-midGray/30" />
 
             <!-- PASSWORD -->
-            <div x-data="{ showPassword: false }" class="flex justify-between items-center">
+            <div x-data="{ showPassword: false }"
+                class="flex flex-col space-y-2 md:flex-row justify-between items-start md:items-centerr">
                 <div>
                     <p class="text-sm text-gray-500">Password</p>
 

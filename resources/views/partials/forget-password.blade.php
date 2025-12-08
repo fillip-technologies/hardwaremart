@@ -1,4 +1,4 @@
-<div id="forgotPasswordModal" class="hidden fixed inset-0 z-50 items-center justify-center bg-black/70">
+<div id="forgotPasswordModal" class="hidden fixed inset-0 z-50 items-center justify-center bg-black/70 px-6">
     <div class="bg-white w-full max-w-md p-8 relative rounded-lg shadow-lg">
 
         <button id="closeForgotPassword"

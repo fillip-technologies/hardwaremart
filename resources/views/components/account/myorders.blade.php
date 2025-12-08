@@ -1,10 +1,10 @@
-<section id="ordersSection" class="bg-lightGray py-12 px-4">
-    <div class="max-w-6xl mx-auto">
+<section id="ordersSection" class="bg-lightGray ">
+    <div class="w-full mx-auto">
 
         <h2 class="text-2xl font-semibold text-secondary mb-6">My Orders</h2>
 
         <!-- Orders Table -->
-        <div class="bg-white rounded-2xl shadow-lg border border-midGray/40 overflow-hidden">
+        <div class="bg-white rounded-2xl shadow-lg border border-midGray/40 overflow-hidden overflow-x-auto">
             <table class="w-full text-sm text-gray-700">
 
                 <!-- TABLE HEADER -->
@@ -89,8 +89,8 @@
 
 
 <!-- CHAT BOX -->
-<div id="chatBox" class="hidden px-4">
-    <div class="max-w-6xl mx-auto">
+<div id="chatBox" class="hidden">
+    <div class="w-full mx-auto">
 
         <div
             class="bg-white rounded-2xl border border-midGray/40 shadow-lg w-full mx-auto overflow-hidden h-[600px] flex flex-col">

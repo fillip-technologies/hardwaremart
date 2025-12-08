@@ -1,5 +1,5 @@
-<section x-data="{ showForm: false }" class="bg-lightGray py-12">
-    <div class="max-w-6xl mx-auto px-6">
+<section x-data="{ showForm: false }" class="bg-lightGray">
+    <div class="w-full mx-auto">
 
         <h2 class="text-2xl font-semibold text-secondary mb-6">My Addresses</h2>
 
