@@ -1,6 +1,6 @@
  <div class="relative w-full">
      <div class="hidden sm:flex items-center w-full rounded-full border-2 border-secondary  shadow-sm overflow-hidden">
-         <input id="searchInput" type="text" placeholder='Search "Camera"'
+         <input id="searchInputDesktop" type="text" placeholder='Search "Camera"'
              class="flex-1 px-4 py-2.5 text-sm text-black bg-white
           border-r-0 rounded-l-full focus:outline-none" />
 
@@ -13,7 +13,7 @@
 
      <div
          class="sm:hidden flex border border-secondary/90 rounded-full px-3 py-2 items-center shadow-sm hover:shadow-md transition">
-         <input id="searchInput" type="text" placeholder='Search "Camera"'
+         <input id="searchInputMobile" type="text" placeholder='Search "Camera"'
              class="flex-1 text-sm focus:outline-none bg-transparent" />
          <button class="text-primary hover:text-primary/90 transition">
              <i class="fas fa-search"></i>
@@ -47,7 +47,7 @@
                  <ul class="space-y-4 text-sm">
 
                      <li class="flex space-x-3 items-start">
-                         <img src="https://images.unsplash.com/photo-1587820290613-9c9235d09f1d?w=600&q=60"
+                         <img src="https://i.gadgets360cdn.com/products/night-vision-hd-cctv-security-camera-large-80299-133853-1584890434.jpg"
                              class="w-10 h-10 object-contain" />
                          <div>
                              <p>HD Night Vision CCTV Camera</p>
@@ -58,7 +58,7 @@
                      </li>
 
                      <li class="flex space-x-3 items-start">
-                         <img src="https://images.unsplash.com/photo-1587202372775-98903b7d7a2d?w=600&q=60"
+                         <img src="https://m.media-amazon.com/images/I/51CVkkeN2yL.jpg"
                              class="w-10 h-10 object-contain" />
                          <div>
                              <p>Dual Band High-Speed WiFi Router</p>
@@ -69,7 +69,7 @@
                      </li>
 
                      <li class="flex space-x-3 items-start">
-                         <img src="https://images.unsplash.com/photo-1606813903278-4f04d75beedb?w=600&q=60"
+                         <img src="https://www.secureye.com/uploads/product/1727952810_b2283b896784c5a82c3d.jpg"
                              class="w-10 h-10 object-contain" />
                          <div>
                              <p>Biometric Attendance Machine</p>
@@ -93,7 +93,7 @@
  </div>
 
 
- <script>
+ {{-- <script>
      const input = document.getElementById("searchInput");
      const dropdown = document.getElementById("searchDropdown");
      const searchText = document.getElementById("searchText");
@@ -106,4 +106,28 @@
              dropdown.classList.add("hidden");
          }
      });
+ </script> --}}
+
+ <script>
+     const inputDesktop = document.getElementById("searchInputDesktop");
+     const inputMobile = document.getElementById("searchInputMobile");
+     const dropdown = document.getElementById("searchDropdown");
+     const searchText = document.getElementById("searchText");
+
+     function handleInput(inputElement) {
+         if (!inputElement) return;
+
+         inputElement.addEventListener("input", () => {
+             if (inputElement.value.trim() !== "") {
+                 dropdown.classList.remove("hidden");
+                 searchText.textContent = inputElement.value;
+             } else {
+                 dropdown.classList.add("hidden");
+             }
+         });
+     }
+
+     // Attach listeners to both inputs
+     handleInput(inputDesktop);
+     handleInput(inputMobile);
  </script>

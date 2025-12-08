@@ -5,7 +5,7 @@
     <div class="w-full mx-auto px-6 grid grid-cols-1 lg:grid-cols-4">
 
         <!-- Sidebar -->
-        <aside :class="sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'"
+        <aside x-cloak :class="sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'"
             class="md:sticky md:top-28 fixed  inset-y-0 left-0 w-3/4 bg-secondary text-lightGray md:rounded-xl shadow-xl p-6 border border-charcoal md:self-start transform transition-transform duration-300 z-50 md:z-10">
 
             <div class="flex justify-end items-center">
@@ -80,3 +80,10 @@
         </div>
     </div>
 </section>
+
+
+<style>
+    [x-cloak] {
+        display: none !important;
+    }
+</style>
