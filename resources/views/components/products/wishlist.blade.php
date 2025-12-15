@@ -7,7 +7,7 @@
             'oldPrice' => 1499,
             'discount' => 26,
             'description' => 'ISI Certified | Comfortable Fit',
-            'isWishlisted' => 'true',
+            'isWishlisted' => 'false',
         ],
         [
             'title' => 'Premium Cement 50KG Bag',
